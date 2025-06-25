@@ -118,4 +118,4 @@ for i in range (len(Profile)):
 
 def export_series(stoch_profiles_series, j):
     series_frame = pd.DataFrame(stoch_profiles_series)
-    series_frame.to_csv('Romit_results_old/output_file_%d.csv' % (j))
+    #series_frame.to_csv('Romit_results_old/output_file_%d.csv' % (j))

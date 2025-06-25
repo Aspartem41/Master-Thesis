@@ -358,7 +358,7 @@ def Stochastic_Process(j,t,r, year, start_month, end_month, num_pro):
                 #Rooms_avg_dict[Rm.room_name].append(Indi_room_type_avg)
                 #all_room_avg = Rooms_avg_dict[Rm.room_name]
             room_load = Profile_dict[Rm.room_name]
-            Indi_room_type_avg = Indi_room_type_tot/Rm.num_rooms
+            Indi_room_type_avg = Indi_room_type_tot/Rm.num_rooms  #takes the avg profile of N number of a room type
             Tot_Classes = (Tot_Classes + Indi_room_type_avg)
             Rooms_avg_dict[Rm.room_name].append(Indi_room_type_avg)#adds the Room load to the total load of all Room classes
         Room_profile.append(Profile_dict)

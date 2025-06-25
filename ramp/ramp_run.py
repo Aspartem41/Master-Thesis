@@ -52,7 +52,7 @@ Room = Rooms.get(Room_code, None)
 if Room is None:
     print("Invalid room code")
 
-Semester_choice =int(input('Please choose a semester: 1-Winter_sem, 2-Summer_sem: ')) #[1,2,3,4]
+Semester_choice =int(input('Please choose a semester: 1-Winter_sem, 2-Summer_sem: ')) #[1,2]
 
 if Semester_choice == 1:
     Sub_choice = int(input('Please choose a option for Winter semester: 1-Semester break, 2-Autumn, 3-Winter, 4-Examination period: '))
@@ -82,6 +82,7 @@ else:
     Simulation_name = 'Invalid semester choice'
     
 
+# Changed to make sure automatic change on Github
 
 #Simulation_name = input('Bitte den Simulationname name eingeben: ')
 start_month = int(input('Enter the start month: '))       # 1-12 == Jan-Dez

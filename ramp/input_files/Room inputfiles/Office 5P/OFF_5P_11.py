@@ -11,7 +11,7 @@ import pandas as pd
 from ramp.core.core import Room, np
 Room_list = []
 
-N = 100   # Total number of Seminar Hall to be considered
+N = 100    # Total number of 5 person office to be considered
 RP = 0     # Room preference
 
 OFF_5P = Room("Office 5P",N,RP)
@@ -28,10 +28,6 @@ t3 = [960,1140]  # For Desk Lamp (4:00 PM - 7:00 PM)
 # Variability factors
 v0 = 0.1   # For timeframe
 v1 = 0.2   # For laptop time and For duty cycles
-
-# ----------------------------------------------------------------------------------------------------------------------------------
-# 1. Office of 2 Person
-# ----------------------------------------------------------------------------------------------------------------------------------
 
 
 # ----------------------------------------------------------------------------------------------------------------------------------
@@ -53,7 +49,7 @@ l_mt_we = df.loc['Light','MT-WE (mins)']      # Minimum function time of the dev
 OFF_5P_Lights = OFF_5P.Appliance(OFF_5P,nl,l_ap,ntf,l_ft_wd,v0,l_mt_wd, wd_we_type = 0, occasional_use = 1)
 OFF_5P_Lights.windows(t1,t0,v0)
 
-# LIghts - Weekend
+# Lights - Weekend
 # OFF_5P_Lights = OFF_5P.Appliance(OFF_5P,nl,ap,2,tt_we,v0,mt_we, wd_we_type = 1)
 # OFF_5P_Lights.windows(t1,t0,v0)
 

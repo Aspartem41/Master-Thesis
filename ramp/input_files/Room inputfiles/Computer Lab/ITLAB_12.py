@@ -49,8 +49,8 @@ ITLAB_Lights = ITLAB.Appliance(ITLAB,nl,l_ap,ntf,l_ft_wd,v1,l_mt_wd, wd_we_type 
 ITLAB_Lights.windows(t1,t0,v1)
 
 # Lights - Weekdays
-ITLAB_Lights = ITLAB.Appliance(ITLAB,nl,l_ap,ntf,l_ft_we,v1,l_mt_we, wd_we_type = 1, occasional_use = 0.2)
-ITLAB_Lights.windows(t1,t0,v1)
+# ITLAB_Lights = ITLAB.Appliance(ITLAB,nl,l_ap,ntf,l_ft_we,v1,l_mt_we, wd_we_type = 1, occasional_use = 0.2)
+# ITLAB_Lights.windows(t1,t0,v1)
 
 
 
@@ -76,8 +76,8 @@ ITLAB_projector = ITLAB.Appliance(ITLAB,nprj,prj_ap,ntf,prj_ft_wd,v1,prj_mt_wd, 
 ITLAB_projector.windows(t1,t0,v1)
 
 # Projector - Weekend
-ITLAB_projector = ITLAB.Appliance(ITLAB,nprj,prj_ap,ntf,prj_ft_we,v1,prj_mt_we, wd_we_type = 1, occasional_use = 0.2)
-ITLAB_projector.windows(t1,t0,v1)
+# ITLAB_projector = ITLAB.Appliance(ITLAB,nprj,prj_ap,ntf,prj_ft_we,v1,prj_mt_we, wd_we_type = 1, occasional_use = 0.2)
+# ITLAB_projector.windows(t1,t0,v1)
 
 
 # 2. Computer
@@ -99,8 +99,8 @@ ITLAB_Comp.windows(t1,t0,v1)
 
 
 # Computer - Weekend
-ITLAB_Comp = ITLAB.Appliance(ITLAB,ncomp,comp_ap,ntf,comp_ft_we,v1,comp_mt_we, wd_we_type = 1, occasional_use = 0.2)
-ITLAB_Comp.windows(t1,t0,v1)
+# ITLAB_Comp = ITLAB.Appliance(ITLAB,ncomp,comp_ap,ntf,comp_ft_we,v1,comp_mt_we, wd_we_type = 1, occasional_use = 0.2)
+# ITLAB_Comp.windows(t1,t0,v1)
 
 
 
@@ -123,8 +123,8 @@ ITLAB_Moni.windows(t1,t0,v1)
 
 
 # Monitor - Weekend
-ITLAB_Moni = ITLAB.Appliance(ITLAB,nmon,mon_ap,ntf,mon_ft_we,v1,mon_mt_we, wd_we_type = 1, occasional_use = 0.2)
-ITLAB_Moni.windows(t1,t0,v1)
+# ITLAB_Moni = ITLAB.Appliance(ITLAB,nmon,mon_ap,ntf,mon_ft_we,v1,mon_mt_we, wd_we_type = 1, occasional_use = 0.2)
+# ITLAB_Moni.windows(t1,t0,v1)
 
 
 
@@ -147,27 +147,27 @@ ITLAB_Lap.windows(t1,t0,v1)
 
 
 # Laptop - Weekend
-ITLAB_Lap = ITLAB.Appliance(ITLAB,nlap,lap_ap,ntf,lap_ft_we,v1,lap_mt_we, wd_we_type = 1, occasional_use = 0.2)
-ITLAB_Lap.windows(t1,t0,v1)
+# ITLAB_Lap = ITLAB.Appliance(ITLAB,nlap,lap_ap,ntf,lap_ft_we,v1,lap_mt_we, wd_we_type = 1, occasional_use = 0.2)
+# ITLAB_Lap.windows(t1,t0,v1)
 
 
 
-# # 5. Mobile
-# nmob = df.loc['Mobile','Number']
-# mob_ap = df.loc['Mobile','AP (W)']
-# mob_sp = df.loc['Mobile','SP (W)']
-# mob_apt_wd = df.loc['Mobile','APT-WD (mins)']
-# mob_apt_we = df.loc['Mobile','APT-WE (mins)']
-# mob_spt_wd = df.loc['Mobile','SPT-WD (mins)']
-# mob_spt_we = df.loc['Mobile','SPT-WE (mins)']
-# mob_ft_wd = df.loc['Mobile','FT-WD (mins)']
-# mob_ft_we = df.loc['Mobile','FT-WE (mins)']
-# mob_mt_wd = df.loc['Mobile','MT-WD (mins)']
-# mob_mt_we = df.loc['Mobile','MT-WE (mins)']
+# 5. Mobile
+nmob = df.loc['Mobile','Number']
+mob_ap = df.loc['Mobile','AP (W)']
+mob_sp = df.loc['Mobile','SP (W)']
+mob_apt_wd = df.loc['Mobile','APT-WD (mins)']
+mob_apt_we = df.loc['Mobile','APT-WE (mins)']
+mob_spt_wd = df.loc['Mobile','SPT-WD (mins)']
+mob_spt_we = df.loc['Mobile','SPT-WE (mins)']
+mob_ft_wd = df.loc['Mobile','FT-WD (mins)']
+mob_ft_we = df.loc['Mobile','FT-WE (mins)']
+mob_mt_wd = df.loc['Mobile','MT-WD (mins)']
+mob_mt_we = df.loc['Mobile','MT-WE (mins)']
 
-# # Mobile - Weekdays
-# ITLAB_Mobile = ITLAB.Appliance(ITLAB,nmob,mob_ap,ntf,mob_ft_wd,v1,mob_mt_wd, wd_we_type = 0, occasional_use = 0.8)
-# ITLAB_Mobile.windows(t1,t0,v1)
+# Mobile - Weekdays
+ITLAB_Mobile = ITLAB.Appliance(ITLAB,nmob,mob_ap,ntf,mob_ft_wd,v1,mob_mt_wd, wd_we_type = 0, occasional_use = 0.8)
+ITLAB_Mobile.windows(t1,t0,v1)
 
 # # Mobile - Weekend
 # ITLAB_Mobile = ITLAB.Appliance(ITLAB,nmob,mob_ap,ntf,mob_ft_we,v1,mob_mt_we, wd_we_type = 1, occasional_use = 0.2)

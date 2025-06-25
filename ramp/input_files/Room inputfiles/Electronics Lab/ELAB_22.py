@@ -60,45 +60,45 @@ ELAB_Lights.windows(t1,t0,v0)
 # ----------------------------------------------------------------------------------------------------------------------------------
 # Parameters for plug loads
 
-# # 1. Computer
-# ncomp = df.loc['Computer','Number']
-# comp_ap = df.loc['Computer','AP (W)']
-# comp_sp = df.loc['Computer','SP (W)']
-# comp_apt_wd = df.loc['Computer','APT-WD (mins)']
-# comp_apt_we = df.loc['Computer','APT-WE (mins)']
-# comp_spt_wd = df.loc['Computer','SPT-WD (mins)']
-# comp_spt_we = df.loc['Computer','SPT-WE (mins)']
-# comp_ft_wd = df.loc['Computer','FT-WD (mins)']
-# comp_ft_we = df.loc['Computer','FT-WE (mins)']
-# comp_mt_wd = df.loc['Computer','MT-WD (mins)']
-# comp_mt_we = df.loc['Computer','MT-WE (mins)']
+# 1. Computer
+ncomp = df.loc['Computer','Number']
+comp_ap = df.loc['Computer','AP (W)']
+comp_sp = df.loc['Computer','SP (W)']
+comp_apt_wd = df.loc['Computer','APT-WD (mins)']
+comp_apt_we = df.loc['Computer','APT-WE (mins)']
+comp_spt_wd = df.loc['Computer','SPT-WD (mins)']
+comp_spt_we = df.loc['Computer','SPT-WE (mins)']
+comp_ft_wd = df.loc['Computer','FT-WD (mins)']
+comp_ft_we = df.loc['Computer','FT-WE (mins)']
+comp_mt_wd = df.loc['Computer','MT-WD (mins)']
+comp_mt_we = df.loc['Computer','MT-WE (mins)']
 
-# # Computer - Weekdays
-# ELAB_Comp = ELAB.Appliance(ELAB,ncomp,comp_ap,ntf,comp_ft_wd,v1,comp_mt_wd, wd_we_type = 0, occasional_use = 0.2)
+# Computer - Weekdays
+ELAB_Comp = ELAB.Appliance(ELAB,ncomp,comp_ap,ntf,comp_ft_wd,v1,comp_mt_wd, wd_we_type = 0, occasional_use = 0.2)
+ELAB_Comp.windows(t1,t0,v0)
+
+# Computer - Weekend
+# ELAB_Comp = ELAB.Appliance(ELAB,ncomp,comp_ap,ntf,comp_ft_we,v1,comp_mt_we, wd_we_type = 1, occasional_use = 0.2)
 # ELAB_Comp.windows(t1,t0,v0)
 
-# # Computer - Weekend
-# # ELAB_Comp = ELAB.Appliance(ELAB,ncomp,comp_ap,ntf,comp_ft_we,v1,comp_mt_we, wd_we_type = 1, occasional_use = 0.2)
-# # ELAB_Comp.windows(t1,t0,v0)
 
 
+# 2. Monitor
+nmon = df.loc['Monitor','Number']
+mon_ap = df.loc['Monitor','AP (W)']
+mon_sp = df.loc['Monitor','SP (W)']
+mon_apt_wd = df.loc['Monitor','APT-WD (mins)']
+mon_apt_we = df.loc['Monitor','APT-WE (mins)']
+mon_spt_wd = df.loc['Monitor','SPT-WD (mins)']
+mon_spt_we = df.loc['Monitor','SPT-WE (mins)']
+mon_ft_wd = df.loc['Monitor','FT-WD (mins)']
+mon_ft_we = df.loc['Monitor','FT-WE (mins)']
+mon_mt_wd = df.loc['Monitor','MT-WD (mins)']
+mon_mt_we = df.loc['Monitor','MT-WE (mins)']
 
-# # 2. Monitor
-# nmon = df.loc['Monitor','Number']
-# mon_ap = df.loc['Monitor','AP (W)']
-# mon_sp = df.loc['Monitor','SP (W)']
-# mon_apt_wd = df.loc['Monitor','APT-WD (mins)']
-# mon_apt_we = df.loc['Monitor','APT-WE (mins)']
-# mon_spt_wd = df.loc['Monitor','SPT-WD (mins)']
-# mon_spt_we = df.loc['Monitor','SPT-WE (mins)']
-# mon_ft_wd = df.loc['Monitor','FT-WD (mins)']
-# mon_ft_we = df.loc['Monitor','FT-WE (mins)']
-# mon_mt_wd = df.loc['Monitor','MT-WD (mins)']
-# mon_mt_we = df.loc['Monitor','MT-WE (mins)']
-
-# # Monitor - Weekdays
-# ELAB_Moni = ELAB.Appliance(ELAB,nmon,mon_ap,ntf,mon_ft_wd,v1,mon_mt_wd, wd_we_type = 0, occasional_use = 0.2)
-# ELAB_Moni.windows(t1,t0,v0)
+# Monitor - Weekdays
+ELAB_Moni = ELAB.Appliance(ELAB,nmon,mon_ap,ntf,mon_ft_wd,v1,mon_mt_wd, wd_we_type = 0, occasional_use = 0.2)
+ELAB_Moni.windows(t1,t0,v0)
 
 # # Monitor - Weekend
 # # ELAB_Moni = ELAB.Appliance(ELAB,nmon,mon_ap,ntf,mon_ft_we,v1,mon_mt_we, wd_we_type = 1, occasional_use = 0.2)
