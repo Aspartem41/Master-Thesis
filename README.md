@@ -37,7 +37,8 @@ The goal of this project is to model realistic electricity consumption behaviour
 
 ## 🖼️ Example Output
 <p align="center">
-  <img src="ramp/Results/Building Plots/Hourly load profile of building34.png" width="600"/>
+  <img src="ramp/Results/Building Plots/Hourly Load Profile of Building 34.jpeg" width="600"/>
+  <img src="ramp/Results/Building Plots/Monthly Load Profile of Building 34.jpeg" width="600"/>
 </p>
 
 ## 📚 References
