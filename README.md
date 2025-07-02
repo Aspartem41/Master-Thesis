@@ -35,6 +35,11 @@ The goal of this project is to model realistic electricity consumption behaviour
 - Validation against historical energy usage data (2011–2023).
 - Ventilation modelling based on seasonal temperature profiles.
 
+## 🖼️ Example Output
+<p align="center">
+  <img src="figures/monthly-load-profile-building34.png" width="600"/>
+</p>
+
 ## 📚 References
 This work uses the open-source tool RAMP as the core simulation framework.
 
