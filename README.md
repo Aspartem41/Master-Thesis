@@ -35,10 +35,9 @@ The goal of this project is to model realistic electricity consumption behaviour
 - Validation against historical energy usage data (2011–2023).
 - Ventilation modelling based on seasonal temperature profiles.
 
----
-## License
-Copyright 2019 RAMP, contributors listed in **Authors**
+## 📚 References
+This work uses the open-source tool RAMP as the core simulation framework.
 
-Licensed under the European Union Public Licence (EUPL), Version 1.2-or-later; you may not use this file except in compliance with the License. 
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License
+If you wish to learn more about RAMP or cite it in your own work, refer to the official publication:
+F. Lombardi, S. Balderrama, S. Quoilin, E. Colombo, Generating high-resolution multi-energy load profiles for remote areas with an open-source stochastic model, Energy, 2019, https://doi.org/10.1016/j.energy.2019.04.097
+Github Link: "https://github.com/RAMP-project/RAMP"
