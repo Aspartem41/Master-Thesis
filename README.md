@@ -34,6 +34,19 @@ The goal of this project is to model realistic electricity consumption behaviour
 - Base load estimation and integration.
 - Validation against historical energy usage data (2011–2023).
 - Ventilation modelling based on seasonal temperature profiles.
+  
+---
+
+- ## 📊 Results Summary
+
+- Hourly and monthly load profiles generated for multiple university buildings.
+- Validation performed for Building 34 and Building 35.
+- Detailed analysis of equipment usage, base load, and seasonal effects.
+
+See the `/Results/` folder for full data.
+
+---
+
 
 ## 🖼️ Example Output
 <p align="center">
