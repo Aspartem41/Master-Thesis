@@ -41,3 +41,22 @@ This work uses the open-source tool RAMP as the core simulation framework.
 If you wish to learn more about RAMP or cite it in your own work, refer to the official publication:
 F. Lombardi, S. Balderrama, S. Quoilin, E. Colombo, Generating high-resolution multi-energy load profiles for remote areas with an open-source stochastic model, Energy, 2019, https://doi.org/10.1016/j.energy.2019.04.097
 Github Link: "https://github.com/RAMP-project/RAMP"
+---
+
+## 📖 License
+
+This repository is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📩 Contact
+
+**Romit Bhavsar**  
+Master of Science in Renewable Energy Systems  
+Hochschule Nordhausen, Germany  
+📧 romit.bhavsar@example.com  
+📏 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+
+---
+
+> This project contributes to more accurate and flexible energy modelling strategies for university campuses, aiding in energy optimisation, planning, and sustainability.
