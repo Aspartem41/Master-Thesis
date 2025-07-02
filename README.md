@@ -49,14 +49,5 @@ This repository is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📩 Contact
-
-**Romit Bhavsar**  
-Master of Science in Renewable Energy Systems  
-Hochschule Nordhausen, Germany  
-📧 romit.bhavsar@example.com  
-📏 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-
----
 
 > This project contributes to more accurate and flexible energy modelling strategies for university campuses, aiding in energy optimisation, planning, and sustainability.
